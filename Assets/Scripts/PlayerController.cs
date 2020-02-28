@@ -15,7 +15,7 @@ namespace AGDDPlatformer
         public AudioSource source;
         public AudioClip jumpSound;
 
-        Vector2 startPosition;
+        Vector2 startPosition {get; set;}
         bool startOrientation;
 
         float lastJumpTime;

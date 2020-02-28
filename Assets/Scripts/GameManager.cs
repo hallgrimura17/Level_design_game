@@ -23,9 +23,9 @@ namespace AGDDPlatformer
         public GameObject startScreen;
         public GameObject endScreen;
         public GameObject gameOverScreen;
-        public float startScreenTime = 1.0f;
-        public float endScreenDelay = 1.0f;
-        public float endScreenTime = 1.0f;
+        public float startScreenTime = 0.5f;
+        public float endScreenDelay = 0.5f;
+        public float endScreenTime = 0.5f;
 
         [Header("Audio")]
         public AudioSource source;
@@ -84,6 +84,7 @@ namespace AGDDPlatformer
 
             if (allGoalsSatisfied)
             {
+                Debug.Log(playerGoals.Length);
                 source.PlayOneShot(winSound);
                 StartCoroutine(LevelCompleted());
             }
