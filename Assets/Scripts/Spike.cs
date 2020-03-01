@@ -10,7 +10,7 @@ namespace AGDDPlatformer
             if (other.CompareTag("Player1") || other.CompareTag("Player2"))
             {
                 var rb = other.GetComponent<PlayerController>();
-                if (rb.velocity.y > 3 || rb.velocity.y < -3){
+                if (rb.velocity.y > 5 || rb.velocity.y < -5){
                     other.GetComponent<PlayerController>().ResetPlayer();
                 }
 

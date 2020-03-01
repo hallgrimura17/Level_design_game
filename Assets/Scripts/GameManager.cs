@@ -93,6 +93,10 @@ namespace AGDDPlatformer
             {
                 ResetLevel();
             }
+            if(Input.GetKeyDown("escape"))
+            {
+                Application.Quit();
+            }
         }
 
         IEnumerator LevelCompleted()
