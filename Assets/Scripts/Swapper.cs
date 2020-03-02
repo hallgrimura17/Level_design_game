@@ -42,7 +42,8 @@ namespace AGDDPlatformer
             }
             Debug.Log("get owned");
             satisfactionIndicator.SetActive(false);
-            // source.Play();
+            source.pitch = UnityEngine.Random.Range(2.4f, 3f);
+            source.Play();
         }
 
         void OnTriggerExit2D(Collider2D other)
